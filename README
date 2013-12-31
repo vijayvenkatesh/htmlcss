@@ -1,4 +1,6 @@
 A bunch of directories that I created to tinker with html and CSS. 
 
 Beatles - This is based on the codeacademy planets tutorial, which I modified to tell the true story of the beatles. Possibilities are endless with this one.
+        - Pull and open this in a browser and you'll see the story of the Beatles. Trying to get Ringo's orbit working properly.
+        - Should rework the CSS orbits and other properties, clean up divs. 
 
