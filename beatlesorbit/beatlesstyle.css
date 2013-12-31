@@ -1,0 +1,116 @@
+html, body {
+    /* The universe takes up all available space */
+    width: 100%;
+    height: 100%;
+    
+    /* The universe is black */
+    background-color: black;
+}
+
+.john {
+    position: absolute;
+    /* Positions the top-left corner of the image to be *
+    /* in the middle of the box */
+    top: 50%;
+    left: 50%;
+    
+    /* Play with these numbers to see what it does */
+    height: 200px;
+    width: 200px;
+    margin-top: -50px; 
+    margin-left: -50px;
+    
+    /* Additional values */
+    /*border-color: orange;
+    border-width: 2px;
+    border-style: solid;
+    */
+    border-radius: 75%;
+  
+    box-shadow: rgb(204, 153, 0) 0px 0px 50px 0px;
+}
+
+.george {
+    position: absolute;
+    /* Positions the bottom-right corner of the image to be *
+    /* looking at the others and laughing */
+    top: 65%;
+    left: 75%;
+    
+    /* Play with these numbers to see what it does */
+    height: 100px;
+    width: 100px;
+    margin-top: -50px; 
+    margin-left: -50px;
+    
+    /* Additional values */
+    /*border-color: orange;
+    border-width: 2px;
+    border-style: solid;
+    */
+    border-radius: 75%;
+  
+    box-shadow: 0px 0px 20px 0px #ff0000;
+}
+
+.paul {
+    /* Style your Paul McCartney */
+    
+    height: 50px;
+    width: 50px;
+    /*margin-left: -25px;
+    margin-top: -25px;*/
+
+    border-radius: 50%;
+}
+
+.paul-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    width: 300px;
+    height: 400px;
+    margin-top: -110px;
+    margin-left: -110px;
+    
+    /*border-width: 1px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+    */
+    
+    -webkit-animation: spin 20s linear infinite;
+    animation: spin 20s linear infinite;
+    -moz-animation: spin 20s linear infinite;
+}
+
+.ringo {
+    height: 55px;
+    width: 55px;
+}
+
+.ringo-orbit {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    bottom: 50px;
+    /*right: 50px;*/
+    
+    height: 10px;
+    width: 1850px;
+
+    margin: 50px 50px 50px 50px;
+    
+    border: 1px;
+
+    border-radius: 50%;
+    
+    -webkit-animation: spin 20s linear infinite;
+    -moz-animation: spin 20s linear infinite;
+    animation: spin 20s linear infinite;
+}
+
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg);  } }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@keyframes spin { 100% { transform: rotate(360deg); } }
